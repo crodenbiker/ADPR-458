@@ -1,0 +1,49 @@
+body {
+  background: #f6f0e3;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2b2b2b;
+}
+
+.page {
+  width: 650px;
+  margin: 40px auto;
+}
+
+.avatar {
+  display: block;
+  margin: 0 auto 18px auto;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  outline: 3px solid #e07a3a;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 10px 0;
+  font-family: Georgia, serif;
+  text-transform: uppercase;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background: #79b9cf;
+  width: 85%;
+  margin: 0 auto 22px auto;
+}
+
+h2 {
+  color: #e07a3a;
+  font-size: 16px;
+  margin: 16px 0 6px 0;
+}
+
+p {
+  margin: 0 0 10px 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
