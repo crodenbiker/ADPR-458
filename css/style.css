@@ -25,7 +25,7 @@ body {
 h1 {
   text-align: center;
   margin: 0 0 10px 0;
-  font-family: Georgia, serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -34,7 +34,7 @@ h1 {
 hr {
   border: 0;
   height: 2px;
-  background: #79b9cf;
+  background: #051317;
   width: 85%;
   margin: 0 auto 22px auto;
 }
