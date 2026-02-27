@@ -5,6 +5,9 @@ body {
   font-family: "Raleway", "Avenir Book", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-image: url("../images/bg.png");
 }
+.container {
+  background-color: white;
+}
 
 .page {
   width: 92%;
@@ -96,4 +99,3 @@ footer p {
     height: 136px;
   }
 }
-
