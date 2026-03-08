@@ -30,10 +30,10 @@ nav a:link, nav a:visited {
 }
 
 /* Section subheadings (h3): italicized */
-h3 {
+ h3 {
   font-family: "nimbus-sans", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+  font-weight: 600;
+  font-style: normal;
 }
 
 /* Body paragraphs: extended light */
