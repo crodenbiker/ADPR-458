@@ -75,6 +75,17 @@ h3 {
   object-fit: cover;
 }
 
+a:link, a :visited {
+  color:#9abcf8;
+  text-decoration: none;
+}
+
+a:hover{
+  color:#728ec0;
+  text-decoration:underline;
+}
+
+
 .profile-wrap {
   display: flex;
   justify-content: center;
@@ -126,4 +137,32 @@ footer {
 
 .social-links a:hover {
   opacity: 0.8;
+}
+/****** DESKTOP LAYOUT *******/
+@media screen and (min-width:40rem) {
+  .col-span-8{
+    grid-column: span 8;
+  }
+  .col-span-4{
+    grid-column: span 4;
+  }
+}
+
+/****** Componenets *******/
+.button :link, .button:visited {
+  color:white;
+  background-color: 9abcf8;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 1.75rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 1.25rem .5rem rgba(0, 0,0, .15);
+  display:inline-block;
+  margin: 0 .25rem, .25rem 0; 
+  transition: background-color 0.5s ease;
+}
+
+.button:hover {
+  background-color:#6e8fc7
+  ;
 }
