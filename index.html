@@ -1,168 +1,63 @@
-:root {
-  --page-bg: #f0efe8;
-  --container-bg: #e8e8e8;
-  --hero-bg: #91a9db;
-  --hero-text: #f7f8fb;
-  --text: #111111;
-  --link: #4f2f93;
-  --ring: #93afe7;
-}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catelyn Rodenbiker</title>
 
-* {
-  box-sizing: border-box;
-  font-family: "Raleway", "Avenir Book", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
 
-body {
-  margin: 0;
-  color: var(--text);
-  line-height: 1.3;
-  background-color: var(--page-bg);
-  background-image: radial-gradient(circle, #bdbdbd 1px, transparent 1.2px);
-  background-size: 22px 22px;
-}
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>Interactive Media Design </h1>
+    </header>
 
-.container {
-  background-color: var(--container-bg);
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(12, 1fr);
-  margin: 0 auto;
-  width: min(95%, 75rem);
-  min-height: 100vh;
-  padding: 0 1.5rem 2rem;
-}
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-.container > * {
-  grid-column: span 12;
-}
+    <main class="layout-about">
+      <section class="col-span-8">
+        <h2>Catelyn Rodenbiker</h2>
 
-.hero {
-  margin: 0;
-  padding: 3rem 2rem;
-  background: var(--hero-bg);
-  color: var(--hero-text);
-}
+        <h3>About Me</h3>
+        <p>I am from Omaha, Nebraska. I am currently majoring in ADPR &amp; Graphic Design.</p>
 
-h1 {
-  margin: 0;
-  font-size: 2rem;
-}
+        <h3>Classes This Semester</h3>
+        <p>I am taking ADPR 458, GRPH 223, GRPH 321, ADPR 428(Jacht), and IDES 201.</p>
 
-h2 {
-  font-size: 1.5rem;
-}
+        <h3>Outside of Class</h3>
+        <p>Outside of class I enjoy running, reading, baking, and spending time with my friends.</p>
 
-h3 {
-  font-size: 1.25rem;
-}
+        <h3>After Graduation</h3>
+        <p>After graduation, I plan on moving to a larger city like Nashville or Chicago.</p>
+      </section>
 
-.site-nav ul {
-  margin: 0;
-  padding-left: 1.5rem;
-}
+      <aside class="profile-wrap col-span-4">
+        <img src="./images/HEADSHOT_RODENBIKER.jpeg" alt="Catelyn headshot" class="circle">
+        <a href= "https://www.linkedin.com"  target="blank" class="Button">Button> Connect on LinkedIn</a>
+      </aside>
+    </main>
 
-.site-nav a {
-  color: var(--link);
-}
+    <footer>
+      <p>&copy; 2026 Catelyn Rodenbiker</p>
+      <div class="social-links" aria-label="Social media links">
+        <a href="https://www.behance.net/catelynrodenbi" aria-label="Behance" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-behance"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/catelyn-rodenbiker-b34345291/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
 
-.circle {
-  border-radius: 50%;
-  border: 5px solid var(--ring);
-  max-width: 100%;
-  width: 220px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-}
-
-a:link, a :visited {
-  color:#9abcf8;
-  text-decoration: none;
-}
-
-a:hover{
-  color:#728ec0;
-  text-decoration:underline;
-}
-
-
-.profile-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-}
-
-.layout-about,
-.layout-work,
-.layout-contact {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1.5rem;
-}
-
-.layout-about > *,
-.layout-work > *,
-.layout-contact > * {
-  grid-column: span 12;
-}
-
-@media screen and (min-width: 40rem) {
-  .col-span-8 {
-    grid-column: span 8;
-  }
-
-  .col-span-4 {
-    grid-column: span 4;
-  }
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.social-links {
-  display: flex;
-  gap: 0.85rem;
-}
-
-.social-links a {
-  color: var(--link);
-  font-size: 1.35rem;
-  text-decoration: none;
-}
-
-.social-links a:hover {
-  opacity: 0.8;
-}
-/****** DESKTOP LAYOUT *******/
-@media screen and (min-width:40rem) {
-  .col-span-8{
-    grid-column: span 8;
-  }
-  .col-span-4{
-    grid-column: span 4;
-  }
-}
-
-/****** Componenets *******/
-.button :link, .button:visited {
-  color:white;
-  background-color: 9abcf8;
-  text-align: center;
-  text-decoration: none;
-  padding: 1rem 1.75rem;
-  border-radius: 1.5rem;
-  box-shadow: 0 1.25rem .5rem rgba(0, 0,0, .15);
-  display:inline-block;
-  margin: 0 .25rem, .25rem 0; 
-  transition: background-color 0.5s ease;
-}
-
-.button:hover {
-  background-color:#6e8fc7
-  ;
-}
