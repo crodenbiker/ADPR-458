@@ -41,12 +41,13 @@ body {
 
 .hero {
   margin: 0;
-  padding: 3rem 2rem;
+  padding: 2rem 1.5rem;
   background: var(--hero-bg);
   color: var(--hero-text);
 }
 
 h1 {
+  padding:0.25rem;
   margin: 0;
   font-size: 2rem;
 }
